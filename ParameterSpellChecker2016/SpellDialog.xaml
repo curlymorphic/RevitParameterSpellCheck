@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="ParameterSpellChecker.SpellDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="537.824" Width="563.499">
+    <Grid Margin="10,0" RenderTransformOrigin="0.509,0.517" HorizontalAlignment="Center" Width="542">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="429*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="closeBtn" Content="Close" HorizontalAlignment="Left" Margin="424,388,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1" Click="closeBtn_Click"/>
+        <Button x:Name="nextBtn" Content="Next" HorizontalAlignment="Left" Margin="424,363,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1" Click="nextBtn_Click"/>
+        <TextBox x:Name="FamilyTB" HorizontalAlignment="Left" Height="23" Margin="75,25,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="424"/>
+        <Label Content="Family" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
+        <Label Content="Type" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="Mark" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TypeTB" HorizontalAlignment="Left" Height="23" Margin="75,50,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="424"/>
+        <TextBox x:Name="PararmeterTB" HorizontalAlignment="Left" Height="23" Margin="75,3,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="424" Grid.Row="1"/>
+        <Label Content="Parameter" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.079,0.385" Grid.RowSpan="2"/>
+        <GroupBox Header="Context" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.07,-1.174" Height="383" Width="397" Grid.Row="1">
+            <TextBox x:Name="ContextTB" HorizontalAlignment="Left" Height="354" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="375" Margin="10,0,0,0" SpellCheck.IsEnabled="True" TextChanged="ContextTB_TextChanged" LostFocus="ContextTB_LostFocus"/>
+        </GroupBox>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command ParameterSpellChecker2016</Text>
+    <Description>Some description for ParameterSpellChecker2016</Description>
+    <Assembly>ParameterSpellChecker2016.dll</Assembly>
+    <FullClassName>ParameterSpellChecker.Command</FullClassName>
+    <ClientId>bcfe28dd-e99f-4f6f-94a2-1d7b4f716d38</ClientId>
+    <VendorId>TBC_</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application ParameterSpellChecker2016</Name>
+    <Assembly>ParameterSpellChecker2016.dll</Assembly>
+    <FullClassName>ParameterSpellChecker2016.App</FullClassName>
+    <ClientId>f5b35334-90a8-4552-ae46-73a4550ef7fc</ClientId>
+    <VendorId>TBC_</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

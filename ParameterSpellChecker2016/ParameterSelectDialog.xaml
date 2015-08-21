@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="ParameterSpellChecker.ParameterSelectDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="450">
+    <Grid x:Name="grid" Margin="10,10,10,0" Height="370" VerticalAlignment="Top" Width="450">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="105*"/>
+            <RowDefinition Height="170*"/>
+            <RowDefinition Height="33*"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="AvaliableLB" HorizontalAlignment="Left" Height="230" Margin="10,13,0,0" VerticalAlignment="Top" Width="149" Grid.RowSpan="2" MouseDoubleClick="AvaliableLB_MouseDoubleClick" SelectionMode="Extended"/>
+        <ListBox x:Name="SelectedLB" HorizontalAlignment="Left" Height="230" Margin="239,13,0,0" VerticalAlignment="Top" Width="151" Grid.RowSpan="2" MouseDoubleClick="SelectedLB_MouseDoubleClick" >
+            <ListBox.ItemBindingGroup>
+                <BindingGroup/>
+            </ListBox.ItemBindingGroup>
+        </ListBox>
+        <Button x:Name="AddBtn" Content="Add" HorizontalAlignment="Left" Margin="164,13,0,0" VerticalAlignment="Top" Width="70" Click="AddBtn_Click"/>
+        <Button x:Name="RemoveBtn" Content="Remove" HorizontalAlignment="Left" Margin="164,38,0,0" VerticalAlignment="Top" Width="70" Click="RemoveBtn_Click"/>
+        <Button x:Name="NoneBtn" Content="None" HorizontalAlignment="Left" Margin="164,84,0,0" VerticalAlignment="Top" Width="70" Click="NoneBtn_Click"/>
+        <Button x:Name="AllBtn" Content="All" HorizontalAlignment="Left" Margin="164,4,0,0" VerticalAlignment="Top" Width="70" Grid.Row="1" Click="AllBtn_Click"/>
+        <Button x:Name="OkBtn" Content="Ok" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Width="75" IsDefault="True" Grid.Row="1" Grid.RowSpan="2" Click="OkBtn_Click"/>
+        <Button x:Name="CancelBtn" Content="Cancel" HorizontalAlignment="Left" Margin="315,165,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" Grid.Row="1" Click="CancelBtn_Click"/>
+        <RadioButton x:Name="selectionRB" Content="Selection" HorizontalAlignment="Left" Margin="164,29,0,0" Grid.Row="1" VerticalAlignment="Top" Width="70" Checked="selectionRB_Checked"/>
+        <RadioButton x:Name="sheetRB" Content="Sheets" HorizontalAlignment="Left" Margin="164,44,0,0" Grid.Row="1" VerticalAlignment="Top" Width="70" Checked="sheetRB_Checked"/>
+        <RadioButton x:Name="viewportRB" Content="ViewPort" HorizontalAlignment="Left" Margin="164,74,0,0" Grid.Row="1" VerticalAlignment="Top" Width="70" Checked="viewportRB_Checked"/>
+        <RadioButton x:Name="viewRB" Content="Views" HorizontalAlignment="Left" Margin="164,59,0,0" Grid.Row="1" VerticalAlignment="Top" Width="70" Checked="viewRB_Checked"/>
+        <RadioButton x:Name="allRB" Content="All" HorizontalAlignment="Left" Margin="164,89,0,0" Grid.Row="1" VerticalAlignment="Top" Width="70" Checked="allRB_Checked"/>
+
+    </Grid>
+</UserControl>
