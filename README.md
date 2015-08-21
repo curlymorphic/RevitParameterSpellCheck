@@ -1,4 +1,4 @@
-# RevitParameterSpellCheck
+# Revit Parameter Spell Check
 A spell checker for the Revit 3d BIM package.
 
 This external command was written to enable spell checking of more than text on Sheets
